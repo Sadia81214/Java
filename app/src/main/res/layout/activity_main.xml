@@ -9,7 +9,7 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <!-- ImageView to show an image -->
+
     <ImageView
         android:id="@+id/myImageView"
         android:layout_width="200dp"
@@ -18,7 +18,7 @@
         android:src="@drawable/flowerrr"
         android:layout_marginTop="40dp" />
 
-    <!-- TextView to show a message -->
+
     <TextView
         android:id="@+id/myTextView"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:textSize="20sp"
         android:layout_marginTop="20dp" />
 
-    <!-- Button to change image and text -->
+
     <Button
         android:id="@+id/myButton"
         android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
         android:minWidth="48dp"
         android:minHeight="48dp" />
 
-    <!-- Additional Button to go to OrderActivity -->
+
     <Button
         android:id="@+id/orderButton"
         android:layout_width="wrap_content"

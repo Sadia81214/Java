@@ -20,7 +20,7 @@ public class OrderActivity extends AppCompatActivity {
     private TextView quantityTextView, priceTextView, ratingTextView;
 
     private int quantity = 1;
-    private final double pricePerItem = 50.0;  // Assuming each item costs 50 BDT
+    private final double pricePerItem = 50.0;
     private double totalPrice = pricePerItem;
 
     @SuppressLint("DefaultLocale")
@@ -29,7 +29,7 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
 
-        // Initialize UI elements
+
         itemNameEditText = findViewById(R.id.itemNameEditText);
         storeRadioGroup = findViewById(R.id.storeRadioGroup);
         checkItem1 = findViewById(R.id.checkItem1);
@@ -43,17 +43,17 @@ public class OrderActivity extends AppCompatActivity {
         RatingBar ratingBar = findViewById(R.id.ratingBar);
         ratingTextView = findViewById(R.id.ratingTextView);
 
-        // Set initial price
+
         updatePrice();
 
-        // Handle quantity increase
+
         increaseQuantityButton.setOnClickListener(v -> {
             quantity++;
             quantityTextView.setText(String.valueOf(quantity));
             updatePrice();
         });
 
-        // Handle quantity decrease
+
         decreaseQuantityButton.setOnClickListener(v -> {
             if (quantity > 1) {
                 quantity--;
@@ -64,22 +64,22 @@ public class OrderActivity extends AppCompatActivity {
             }
         });
 
-        // Handle rating change
+
         ratingBar.setOnRatingBarChangeListener((ratingBar1, rating, fromUser) -> ratingTextView.setText(String.format("Rating: %.1f", rating)));
 
-        // Handle place order button click
+
         placeOrderButton.setOnClickListener(v -> placeOrder());
     }
 
-    // Method to update price
+
     @SuppressLint("DefaultLocale")
     private void updatePrice() {
-        // Calculate total price based on quantity
+
         totalPrice = quantity * pricePerItem;
         priceTextView.setText(String.format("BDT %.2f", totalPrice));
     }
 
-    // Method to handle placing the order
+
     private void placeOrder() {
         String itemName = itemNameEditText.getText().toString().trim();
         if (itemName.isEmpty()) {
@@ -87,12 +87,12 @@ public class OrderActivity extends AppCompatActivity {
             return;
         }
 
-        // Get selected store
+
         int selectedStoreId = storeRadioGroup.getCheckedRadioButtonId();
         RadioButton selectedStoreRadioButton = findViewById(selectedStoreId);
         String selectedStore = (selectedStoreRadioButton != null) ? selectedStoreRadioButton.getText().toString() : "No store selected";
 
-        // Get selected additional items
+
         StringBuilder additionalItems = new StringBuilder();
         if (checkItem1.isChecked()) additionalItems.append(checkItem1.getText()).append(", ");
         if (checkItem2.isChecked()) additionalItems.append(checkItem2.getText()).append(", ");
@@ -104,7 +104,7 @@ public class OrderActivity extends AppCompatActivity {
             additionalItems.append("No additional items");
         }
 
-        // Display a summary of the order
+
         @SuppressLint("DefaultLocale") String orderSummary = String.format(
                 "Item: %s\nStore: %s\nQuantity: %d\nAdditional Items: %s\nTotal Price: BDT %.2f",
                 itemName, selectedStore, quantity, additionalItems, totalPrice);
