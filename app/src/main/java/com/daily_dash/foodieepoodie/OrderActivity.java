@@ -99,7 +99,7 @@ public class OrderActivity extends AppCompatActivity {
         if (checkItem3.isChecked()) additionalItems.append(checkItem3.getText()).append(", ");
 
         if (additionalItems.length() > 0) {
-            additionalItems.setLength(additionalItems.length() - 2);  // Remove last comma and space
+            additionalItems.setLength(additionalItems.length() - 2);  
         } else {
             additionalItems.append("No additional items");
         }
