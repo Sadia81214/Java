@@ -24,4 +24,7 @@
     <string name="next">Next</string>
     <string name="go_to_order_activity">Go to Order Activity</string>
     <string name="todo">TODO</string>
+    <string name="adjust_preference_level">Adjust Preference Level</string>
+    <string name="enable_feature">Enable Feature</string>
+    <string name="enable">Enable</string>
 </resources>

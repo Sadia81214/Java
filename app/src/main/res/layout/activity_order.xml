@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,8 +14,6 @@
         android:text="@string/select_category"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-
 
     <!-- Input Item Name -->
     <TextView
@@ -160,6 +157,23 @@
         android:textAllCaps="true"
         android:layout_marginTop="8dp" />
 
+    <!-- SeekBar for Adjusting Preference (Added Component) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adjust_preference_level"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginTop="8dp" />
+
     <!-- Rating Section -->
     <TextView
         android:layout_width="wrap_content"
@@ -185,10 +199,26 @@
         android:textSize="18sp"
         android:layout_marginTop="8dp" />
 
+    <!-- Switch for enabling/disabling a feature (Added Component) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_feature"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Switch
+        android:id="@+id/featureSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable"
+        android:layout_marginTop="8dp" />
+
     <!-- Place Order Button -->
     <Button
         android:id="@+id/placeOrderButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:minHeight="48dp"
