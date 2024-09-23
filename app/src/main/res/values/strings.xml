@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Foodieepoodie</string>
+    <string name="item_name">Item Name:</string>
+    <string name="select_category">Select Category:</string>
+    <string name="enter_item_name">Enter item name</string>
+    <string name="select_preferred_store">Select Preferred Store:</string>
+    <string name="store_a">Store A</string>
+    <string name="store_b">Store B</string>
+    <string name="select_additional_items">Select Additional Items:</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="select_quantity">Select Quantity:</string>
+    <string name="_1">1</string>
+    <string name="place_order">Place Order</string>
+    <string name="rating_0_0">Rating: 0.0</string>
+    <string name="rate_this_product">Rate This Product</string>
+    <string name="bdt_0">BDT 0</string>
+    <string name="total_price_bdt">Total Price (BDT):</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="welcome_to_the_app">Welcome to the App</string>
+    <string name="next">Next</string>
+    <string name="go_to_order_activity">Go to Order Activity</string>
+    <string name="todo">TODO</string>
 </resources>

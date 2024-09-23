@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="holo_green_light">#86C052</color>
+    <color name="fire_brick_200">#BD362C</color>
+    <color name="fire_brick_500">#BE665F</color>
 </resources>
