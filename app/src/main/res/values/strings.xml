@@ -27,4 +27,11 @@
     <string name="adjust_preference_level">Adjust Preference Level</string>
     <string name="enable_feature">Enable Feature</string>
     <string name="enable">Enable</string>
+    <string name="grocery_shop_inventory">Grocery Shop Inventory</string>
+    <string name="item_name1">Item Name</string>
+    <string name="quantity1">Quantity</string>
+    <string name="price">Price</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+
 </resources>
